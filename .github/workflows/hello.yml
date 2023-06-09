@@ -1,11 +1,8 @@
-name: Hello World!
-on: 
-  push:
-    branches: 
-      - master
+name: hello-world
+on: push
 jobs:
-  build:
-     runs-on: ubantu-latest
-     steps:
-       - name: Say hello
-         run: echo "Hello World!"
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "Hello World!"
