@@ -1,13 +1,19 @@
 name: Deployment Pipeline
 on:
   push:
-    branches: [master]
-
+    branches: 
+      - master
 jobs: 
   simple-deployment-pipeline:
     runs-on: ubantu-latest
     steps:
       - uses: actions/checkout@v3
-        name: test
-      - run: echo "Hi"
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Install dependencies 
+        run: npm install  
+      - name: Check style
+        run: npm run eslintrc
+      
       
