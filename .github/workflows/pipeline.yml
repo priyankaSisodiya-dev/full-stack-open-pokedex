@@ -1,0 +1,12 @@
+name: Deployment Pipeline
+on:
+  push:
+    branches:
+      - master
+
+jobs: 
+  simple_deployment_pipeline:
+    runs-on: ubantu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
