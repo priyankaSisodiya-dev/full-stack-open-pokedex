@@ -1,5 +1,8 @@
 name: Deployment Pipeline
-on: push
+on: 
+  push:
+    branches:
+      - master
 jobs: 
   simple-deployment-pipeline:
     runs-on: ubantu-latest
