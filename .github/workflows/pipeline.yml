@@ -7,8 +7,8 @@ jobs:
   simple-deployment-pipeline:
     runs-on: ubantu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
           node-version: '16'
       - name: Install dependencies 
