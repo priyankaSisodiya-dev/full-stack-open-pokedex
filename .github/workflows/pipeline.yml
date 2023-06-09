@@ -12,9 +12,10 @@ jobs:
         with:
           node-version: '16'
       - name: Install dependencies 
-      - run: npm install  
+        run: npm install  
       - name: Check style
-      - run: npm run eslintrc
-      - run: echo "hi"
+        run: npm run eslintrc
+      - name: hi
+        run: echo "hi"
       
       
