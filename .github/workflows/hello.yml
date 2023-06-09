@@ -2,7 +2,7 @@ name: Hello World!
 on: 
   push:
     branches: 
-      master
+      - master
 jobs:
   hello_world_job:
     runs-on: ubantu - 20.04
