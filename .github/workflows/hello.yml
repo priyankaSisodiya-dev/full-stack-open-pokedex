@@ -4,9 +4,8 @@ on:
     branches: 
       - master
 jobs:
-  hello_world_job:
-    runs-on: ubantu-latest
-    steps:
-      - name: Say hello
-        run: |
-         echo "Hello World"
+  build:
+     runs-on: ubantu-latest
+     steps:
+       - name: Say hello
+         run: echo "Hello World!"
